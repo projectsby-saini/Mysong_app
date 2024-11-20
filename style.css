@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #121212; /* Spotify-like dark background */
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: #181818; /* Slightly lighter shade for the header */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1DB954; /* Spotify green */
+}
+
+#searchBar {
+    background: #282828; /* Darker input field */
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 100%; /* Full-width on mobile */
+    max-width: 500px; /* Prevents stretching on larger screens */
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#searchBar:focus {
+    outline: none;
+    border: 2px solid #1DB954;
+}
+
+/* Track List */
+#trackList {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px;
+}
+
+.track {
+    background: #181818;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    flex-wrap: wrap; /* Adjusts layout for narrow screens */
+}
+
+.track:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.track img {
+    width: 50px; /* Smaller image for mobile */
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.track div h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.track div p {
+    font-size: 12px;
+    color: #b3b3b3; /* Spotify-like gray for text */
+}
+
+/* Player */
+#player {
+    background: #181818;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#audioPlayer {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+    background: #282828;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Media Queries for Extra Small Screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px; /* Smaller title */
+    }
+
+    #trackList {
+        gap: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    .track {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .track img {
+        width: 40px; /* Even smaller for very narrow screens */
+        height: 40px;
+    }
+
+    .track div h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .track div p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #searchBar {
+        width: 90%; /* Adjust width for tablet screens */
+    }
+
+    .track img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .track div h4 {
+        font-size: 14px;
+    }
+
+    .track div p {
+        font-size: 12px;
+    }
+}

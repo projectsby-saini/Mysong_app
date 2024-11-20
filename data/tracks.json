@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Song 1",
+        "artist": "Artist A",
+        "album": "Album X",
+        "audio": "audio/1.mp3",
+        "cover": "images/1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Song 2",
+        "artist": "Artist B",
+        "album": "Album Y",
+        "audio": "audio/2.mp3",
+        "cover": "images/2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Song 3",
+        "artist": "Artist A",
+        "album": "Album X",
+        "audio": "audio/3.mp3",
+        "cover": "images/3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Song 4",
+        "artist": "Artist B",
+        "album": "Album Y",
+        "audio": "audio/4.mp3",
+        "cover": "images/4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Song 5",
+        "artist": "Artist A",
+        "album": "Album X",
+        "audio": "audio/5.mp3",
+        "cover": "images/5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Song 6",
+        "artist": "Artist B",
+        "album": "Album Y",
+        "audio": "audio/6.mp3",
+        "cover": "images/6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Song 7",
+        "artist": "Artist A",
+        "album": "Album X",
+        "audio": "audio/7.mp3",
+        "cover": "images/7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Song 8",
+        "artist": "Artist B",
+        "album": "Album Y",
+        "audio": "audio/8.mp3",
+        "cover": "images/8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Song 9",
+        "artist": "Artist A",
+        "album": "Album X",
+        "audio": "audio/9.mp3",
+        "cover": "images/9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Song 10",
+        "artist": "Artist B",
+        "album": "Album Y",
+        "audio": "audio/10.mp3",
+        "cover": "images/10.jpg"
+    }
+]
